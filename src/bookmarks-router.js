@@ -2,8 +2,7 @@ const express = require('express')
 const uuid = require('uuid/v4')
 const bookmarks = require('./store')
 const bookmarksRouter = express.Router()
-const bodyParser = require('body-parser')
-
+const bodyParser = express.json()
 
 const {isWebUri} = require('valid-url')
 
